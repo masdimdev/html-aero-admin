@@ -1,0 +1,1 @@
+!function(l){l(document).ready(function(){l(".slider").slider({full_width:!0}),l(".carousel.carousel-slider").carousel({full_width:!0}),l(".carousel").carousel()})}(jQuery);

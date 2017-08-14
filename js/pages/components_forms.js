@@ -1,0 +1,1 @@
+!function(t){t(document).ready(function(){var e=document.getElementById("range-input");noUiSlider.create(e,{start:[20,80],connect:!0,step:1,range:{min:0,max:100},format:wNumb({decimals:0})}),t("input#input_text, textarea#textarea1").characterCounter(),t("input.autocomplete").autocomplete({data:{Apple:null,Microsoft:null,Google:"http://placehold.it/250x250"}})})}(jQuery);

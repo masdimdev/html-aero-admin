@@ -1,0 +1,1 @@
+!function(a){a(document).ready(function(){a(".chips-initial").material_chip({readOnly:!0,data:[{tag:"Apple"},{tag:"Microsoft"},{tag:"Google"}]}),a(".chips-placeholder").material_chip({placeholder:"Enter a tag",secondaryPlaceholder:"+Tag"}),a(".chips").material_chip()})}(jQuery);

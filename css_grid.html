@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CSS - Grid | Aero Admin</title>
+<meta name="author" content="">
+ 
+ 
+ 
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+ 
+ 
+ 
+<link href="bower_components/Materialize/dist/css/materialize.css" rel="stylesheet" type="text/css"/>
+<link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="bower_components/code-prettify/src/prettify.css" rel="stylesheet" type="text/css"/>
+<link href="css/admin.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/themes/light.css" id="ssThemeColor" rel="stylesheet" type="text/css"/>
+<link href="css/themes/main/materialize-red.css" id="ssMainColor" rel="stylesheet" type="text/css"/>
+<link href="css/themes/alternative/red.css" id="ssAlternativeColor" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/theme-switcher.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/pages/css_grid.css" rel="stylesheet" type="text/css"/>
+<link href="css/apps/browser.css" rel="stylesheet" type="text/css"/>
+<link href="css/apps/pricing-table.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+ 
+ 
+ 
+<div id="nav-content">
+<nav>
+<div class="row">
+<div class="col s12">
+ 
+ 
+ 
+<div class="nav-wrapper">
+<a href="index.html" class="brand-logo">
+<img src="img/logo.png"/>
+<span class="valign">
+<b class="main-text">Aero</b> Admin
+</span>
+</a>
+ 
+<ul class="right hide-on-med-and-down">
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="documentation.html">Documentation</a></li>
+<li class="active">
+<a class="dropdown-button" href="css_grid.html#!" data-activates="dropdown-css" data-constrainwidth="false" data-beloworigin="true">
+CSS<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="css_grid.html#!" data-activates="dropdown-components" data-constrainwidth="false" data-beloworigin="true">
+Components<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="css_grid.html#!" data-activates="dropdown-javascript" data-constrainwidth="false" data-beloworigin="true">
+Javascript<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="css_grid.html#!" data-activates="dropdown-apps" data-constrainwidth="false" data-beloworigin="true">
+APPs<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="css_grid.html#!" data-activates="dropdown-pages" data-constrainwidth="false" data-beloworigin="true">
+Pages<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li class="profile ">
+<a class="dropdown-button" href="css_grid.html#!" data-activates="dropdown-profile" data-constrainwidth="false" data-beloworigin="true" data-alignment="right">
+<div class="valign-wrapper">
+<img src="img/profile.jpg" alt="My profile" class="circle responsive-img margin-right-10">
+John Doe
+<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</div>
+</a>
+</li>
+</ul>
+ 
+<ul id="dropdown-css" class="dropdown-content">
+<li><a href="css_color.html">Color</a></li>
+<li class="active"><a href="css_grid.html">Grid</a></li>
+<li><a href="css_helpers.html">Helpers</a></li>
+<li><a href="css_media.html">Media</a></li>
+<li><a href="css_sass.html">Sass</a></li>
+<li><a href="css_shadow.html">Shadow</a></li>
+<li><a href="css_table.html">Table</a></li>
+<li><a href="css_typography.html">Typography</a></li>
+</ul>
+<ul id="dropdown-components" class="dropdown-content">
+<li><a href="components_badges.html">Badges</a></li>
+<li><a href="components_buttons.html">Buttons</a></li>
+<li><a href="components_breadcrumbs.html">Breadcrumbs</a></li>
+<li><a href="components_cards.html">Cards</a></li>
+<li><a href="components_chips.html">Chips</a></li>
+<li><a href="components_collections.html">Collections</a></li>
+<li><a href="components_footer.html">Footer</a></li>
+<li><a href="components_forms.html">Forms</a></li>
+<li><a href="components_icons.html">Icons</a></li>
+<li><a href="components_navbar.html">Navbar</a></li>
+<li><a href="components_pagination.html">Pagination</a></li>
+<li><a href="components_preloader.html">Preloader</a></li>
+</ul>
+<ul id="dropdown-javascript" class="dropdown-content">
+<li><a href="js_collapsible.html">Collapsible</a></li>
+<li><a href="js_dialogs.html">Dialogs</a></li>
+<li><a href="js_dropdown.html">Dropdown</a></li>
+<li><a href="js_media.html">Media</a></li>
+<li><a href="js_modals.html">Modals</a></li>
+<li><a href="js_parallax.html">Parallax</a></li>
+<li><a href="js_pushpin.html">Pushpin</a></li>
+<li><a href="js_scrollfire.html">ScrollFire</a></li>
+<li><a href="js_scrollspy.html">Scrollspy</a></li>
+<li><a href="js_sidenav.html">SideNav</a></li>
+<li><a href="js_tabs.html">Tabs</a></li>
+<li><a href="js_transitions.html">Transitions</a></li>
+<li><a href="js_waves.html">Waves</a></li>
+</ul>
+<ul id="dropdown-apps" class="dropdown-content">
+<li><a href="apps_crud.html">CRUD</a></li>
+<li><a href="apps_pricing_table.html">Pricing Table</a></li>
+<li><a href="apps_datatables.html">DataTables</a></li>
+<li><a href="apps_maps.html">Maps</a></li>
+<li><a href="apps_charts.html">Charts</a></li>
+</ul>
+<ul id="dropdown-pages" class="dropdown-content">
+<li><a href="pages_blank.html">Blank</a></li>
+<li class="divider"></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="forgot_password.html">Forgot Password</a></li>
+<li class="divider"></li>
+<li><a href="error_400.html">Error 400</a></li>
+<li><a href="error_403.html">Error 403</a></li>
+<li><a href="error_404.html">Error 404</a></li>
+<li><a href="error_500.html">Error 500</a></li>
+</ul>
+<ul id="dropdown-profile" class="dropdown-content">
+<li><a href="profile.html">Profile</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+ 
+<a href="css_grid.html#" data-activates="mobile-demo" class="button-collapse">
+<i class="material-icons">menu</i>
+</a>
+</div>
+ 
+ 
+ 
+<ul class="side-nav" id="mobile-demo">
+<li class="logo">
+<img src="img/logo.png"/>
+<p>
+<b class="main-text">Aero</b> Admin
+</p>
+</li>
+<li>
+<a href="index.html" class="waves-effect">Dashboard</a>
+</li>
+<li class="padding-0">
+<ul class="collapsible collapsible-accordion">
+<li class="bold">
+<a class="collapsible-header waves-effect">CSS</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="css_color.html">Color</a></li>
+<li><a href="css_grid.html">Grid</a></li>
+<li><a href="css_helpers.html">Helpers</a></li>
+<li><a href="css_media.html">Media</a></li>
+<li><a href="css_sass.html">Sass</a></li>
+<li><a href="css_shadow.html">Shadow</a></li>
+<li><a href="css_table.html">Table</a></li>
+<li><a href="css_typography.html">Typography</a></li>
+</ul>
+</div>
+</li>
+<li class="bold">
+<a class="collapsible-header waves-effect">Components</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="components_badges.html">Badges</a></li>
+<li><a href="components_buttons.html">Buttons</a></li>
+<li><a href="components_breadcrumbs.html">Breadcrumbs</a></li>
+<li><a href="components_cards.html">Cards</a></li>
+<li><a href="components_chips.html">Chips</a></li>
+<li><a href="components_collections.html">Collections</a></li>
+<li><a href="components_footer.html">Footer</a></li>
+<li><a href="components_forms.html">Forms</a></li>
+<li><a href="components_icons.html">Icons</a></li>
+<li><a href="components_navbar.html">Navbar</a></li>
+<li><a href="components_pagination.html">Pagination</a></li>
+<li><a href="components_preloader.html">Preloader</a></li>
+</ul>
+</div>
+</li>
+<li class="bold">
+<a class="collapsible-header waves-effect">JavaScript</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="js_collapsible.html">Collapsible</a></li>
+<li><a href="js_dialogs.html">Dialogs</a></li>
+<li><a href="js_dropdown.html">Dropdown</a></li>
+<li><a href="js_media.html">Media</a></li>
+<li><a href="js_modals.html">Modals</a></li>
+<li><a href="js_parallax.html">Parallax</a></li>
+<li><a href="js_pushpin.html">Pushpin</a></li>
+<li><a href="js_scrollfire.html">ScrollFire</a></li>
+<li><a href="js_scrollspy.html">Scrollspy</a></li>
+<li><a href="js_sidenav.html">SideNav</a></li>
+<li><a href="js_tabs.html">Tabs</a></li>
+<li><a href="js_transitions.html">Transitions</a></li>
+<li><a href="js_waves.html">Waves</a></li>
+</ul>
+</div>
+</li>
+<li class="bold">
+<a class="collapsible-header waves-effect">APPs</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="apps_crud.html">CRUD</a></li>
+<li><a href="apps_pricing_table.html">Pricing Table</a></li>
+<li><a href="http://demo.felippepuhle.com.br/aero/app_datatables.html">Datatables</a></li>
+<li><a href="http://demo.felippepuhle.com.br/aero/app_maps.html">Maps</a></li>
+<li><a href="http://demo.felippepuhle.com.br/aero/app_charts.html">Charts</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+ 
+ 
+ 
+<main>
+<div class="main-content">
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<div class="page-header">
+<h1>
+<i class="material-icons">line_style</i> Grid
+</h1>
+<p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+</div>
+</div>
+</div>
+ 
+ 
+ 
+<section id="css_grid">
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Container</h4>
+<p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The <code class="language-markup">container</code> class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+<h5 class="margin-top-25">Demo</h5>
+<p>Try the button below to see what the page looks like without containers</p>
+<button class="btn waves-effect waves-light waves-lighten-4 classToggle" data-class="container" data-target="#site-layout-example-container">Toggle Containers</button>
+<div class="browser-app">
+<div class="top-bar">
+<div class="circles">
+<div id="close-circle" class="circle"></div>
+<div id="minimize-circle" class="circle"></div>
+<div id="maximize-circle" class="circle"></div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="top col s12 main lighten-2"></div>
+<div class="right col s12 alternative lighten-3">
+<div id="site-layout-example-container" class="container">
+<p class="flat-text small"></p>
+<p class="flat-text full-width"></p>
+<p class="flat-text full-width"></p>
+<p class="flat-text full-width"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>To add a container just put your content inside a <code class="language-markup">&lt;div&gt;</code> tag with a <code class="language-markup">container</code> class. Here's an example of how your page might be set up.</p>
+<pre>
+								<code class="language-markup">
+&lt;body>
+	&lt;div class="container">
+		&lt;!-- Page Content goes here -->
+	&lt;/div>
+&lt;/body>
+		        		</code>
+		        	</pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row margin-top-25">
+<div class="col s12">
+<h4 class="main-text lighten-1">Introduction</h4>
+<p>Take a look at this section to quickly understand how the grid works!</p>
+<h5 class="margin-top-35">12 Columns</h5>
+<p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+<div class="row no-gutter">
+<div class="col s1"><div class="grid-example"><span class="flow-text">1</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">2</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">3</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">4</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">5</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">6</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">7</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">8</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">9</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">10</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">11</span></div></div>
+<div class="col s1"><div class="grid-example"><span class="flow-text">12</span></div></div>
+</div>
+<p>To get a feel of how the grid is used in HTML, take a look at the code below which will produce a similar result to the one above.</p>
+<p>Note: For now, just know that the <code class="language-markup">s1</code> stands for small-1 which in plain English means "1 column on small screens".</p>
+<pre>
+								<code class="language-markup">
+&lt;div class="row">
+	&lt;div class="col s1">1&lt;/div>
+	&lt;div class="col s1">2&lt;/div>
+	&lt;div class="col s1">3&lt;/div>
+	&lt;div class="col s1">4&lt;/div>
+	&lt;div class="col s1">5&lt;/div>
+	&lt;div class="col s1">6&lt;/div>
+	&lt;div class="col s1">7&lt;/div>
+	&lt;div class="col s1">8&lt;/div>
+	&lt;div class="col s1">9&lt;/div>
+	&lt;div class="col s1">10&lt;/div>
+	&lt;div class="col s1">11&lt;/div>
+	&lt;div class="col s1">12&lt;/div>
+&lt;/div>
+		        		</code>
+		        	</pre>
+<h5 class="margin-top-35">Columns live inside Rows</h5>
+<p>Remember when you are creating your layout that all columns must be contained inside a row and that you must add the <code class="language-markup">col</code> class to your inner divs to make them into columns</p>
+<div class="row no-gutter">
+<div class="col s12"><div class="grid-example"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div></div>
+<div class="col s6"><div class="grid-example"><span class="flow-text">6-columns (one-half)</span></div></div>
+<div class="col s6"><div class="grid-example"><span class="flow-text">6-columns (one-half)</span></div></div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;div class="row">
+	&lt;div class="col s12">This div is 12-columns wide&lt;/div>
+	&lt;div class="col s6">This div is 6-columns wide&lt;/div>
+	&lt;div class="col s6">This div is 6-columns wide&lt;/div>
+&lt;/div>
+		        		</code>
+		        	</pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row margin-top-25">
+<div class="col s12">
+<h4 class="main-text lighten-1">Offsets</h4>
+<p>To offset, simply add <code class="language-markup">offset-s2</code> to the class where <code class="language-markup">s</code> signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.</p>
+<div class="row no-gutter">
+<div class="col s12"><div class="grid-example"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div></div>
+<div class="col s6 offset-s6"><div class="grid-example"><span class="flow-text">6-columns (offset-by-6)</span></div></div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;div class="row">
+	&lt;div class="col s12">&lt;span class="flow-text">This div is 12-columns wide on all screen sizes&lt;/span>&lt;/div>
+	&lt;div class="col s6 offset-s6">&lt;span class="flow-text">6-columns (offset-by-6)&lt;/span>&lt;/div>
+&lt;/div>
+		          		</code>
+		        	</pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row margin-top-25">
+<div class="col s12">
+<h4 class="main-text lighten-1">Push and Pull</h4>
+<p>You can easily change the order of your columns with push and pull. Simply add <code class="language-markup">push-s2</code> or <code class="language-markup">pull-s2</code> to the class where <code class="language-markup">s</code> signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to push or pull by.</p>
+<div class="row no-gutter">
+<div class="col s7 push-s5"><div class="grid-example"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div></div>
+<div class="col s5 pull-s7"><div class="grid-example"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div></div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;div class="row">
+	&lt;div class="col s7 push-s5">&lt;span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.&lt;/span>&lt;/div>
+	&lt;div class="col s5 pull-s7">&lt;span class="flow-text">5-columns wide pulled to the left by 7-columns.&lt;/span>&lt;/div>
+&lt;/div>
+		        		</code>
+		        	</pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row margin-top-40">
+<div class="col s12">
+<h4 class="main-text lighten-1">Creating Layouts</h4>
+<p>Here we will show you how to create some commonly used layouts with our grid system. Hopefully these will get you more comfortable with laying out elements. To keep these demos simple, the ones here will not be responsive.</p>
+</div>
+</div>
+ 
+<div class="row margin-top-35">
+<div class="col s12">
+<h5>Section</h5>
+<p>The section class is used for simple top and bottom padding. Just add the <code class="language-markup">section</code> class to your div's containing large blocks of content.</p>
+</div>
+<div class="col s12">
+<h5>Divider</h5>
+<p>Dividers are 1 pixel lines that help break up your content. Just add the <code class="language-markup">divider</code> to a div in between your content.</p>
+</div>
+<div class="col s12">
+<div class="divider"></div>
+<div class="section">
+<p>Section 1</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+<p>Section 2</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+<p>Section 3</p>
+</div>
+<div class="divider"></div>
+</div>
+<div class="col s12">
+<pre>
+								<code class="language-markup">
+&lt;div class="divider">&lt;/div>
+&lt;div class="section">
+	&lt;h5>Section 1&lt;/h5>
+	&lt;p>Stuff&lt;/p>
+&lt;/div>
+&lt;div class="divider">&lt;/div>
+&lt;div class="section">
+	&lt;h5>Section 2&lt;/h5>
+	&lt;p>Stuff&lt;/p>
+&lt;/div>
+&lt;div class="divider">&lt;/div>
+&lt;div class="section">
+	&lt;h5>Section 3&lt;/h5>
+	&lt;p>Stuff&lt;/p>
+&lt;/div>
+		        		</code>
+		        	</pre>
+</div>
+</div>
+ 
+<div class="row margin-top-50">
+<div class="col s12">
+<h5>Example Promotion Table</h5>
+<p>If we want 3 divs that are equal size, we define the divs with a width of 4-columns, 4+4+4 = 12, which nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example.</p>
+<div class="pricing-table-app">
+<div class="row">
+<div class="col s4">
+<div class="center promo promo-example">
+<i class="material-icons main-text lighten-2">flash_on</i>
+<p class="promo-caption">Speeds up development</p>
+<p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+</div>
+</div>
+<div class="col s4">
+<div class="center promo promo-example">
+<i class="material-icons main-text lighten-2">group</i>
+<p class="promo-caption">User Experience Focused</p>
+<p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+</div>
+</div>
+<div class="col s4">
+<div class="center promo promo-example">
+<i class="material-icons main-text lighten-2">settings</i>
+<p class="promo-caption">Easy to work with</p>
+<p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+</div>
+</div>
+</div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;div class="row">
+
+	&lt;div class="col s4">
+		&lt;!-- Promo Content 1 goes here -->
+	&lt;/div>
+	&lt;div class="col s4">
+		&lt;!-- Promo Content 2 goes here -->
+	&lt;/div>
+	&lt;div class="col s4">
+		&lt;!-- Promo Content 3 goes here -->
+	&lt;/div>
+
+&lt;/div>
+		        		</code>
+		        	</pre>
+</div>
+</div>
+ 
+<div class="row margin-top-35">
+<div class="col s12">
+<h5>Example Side Navigation Layout</h5>
+<p>You can see how easy it is to create layouts using the grid system. Just remember to make sure your column numbers add up to 12 for an even layout.</p>
+<div class="browser-app">
+<div class="top-bar">
+<div class="circles">
+<div id="close-circle" class="circle"></div>
+<div id="minimize-circle" class="circle"></div>
+<div id="maximize-circle" class="circle"></div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="top col s12 main lighten-2"></div>
+<div class="left col s3">
+<p class="flat-header"></p>
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+</div>
+<div class="right col s9 alternative lighten-3">
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+</div>
+</div>
+</div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;!-- Navbar goes here -->
+
+&lt;!-- Page Layout here -->
+&lt;div class="row">
+
+	&lt;div class="col s3">
+		&lt;!-- Grey navigation panel -->
+	&lt;/div>
+
+	&lt;div class="col s9">
+		&lt;!-- Main page content  -->
+	&lt;/div>
+
+&lt;/div>
+		        		</code>
+		        	</pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row margin-top-50">
+<div class="col s12">
+<h4 class="main-text lighten-1">Creating Responsive Layouts</h4>
+<p>Above we showed you how to layout elements using our grid system. Now we'll show you how to design your layouts so that they look great on all screen sizes.</p>
+<table class="striped">
+<thead>
+<tr>
+<th></th>
+<th>Mobile Devices <br>&lt;= 600px</th>
+<th>Tablet Devices <br>&lt;= 992px</th>
+<th>Desktop Devices <br>&gt; 992px</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Class Prefix</strong></td>
+<td><code class="language-markup">.s</code></td>
+<td><code class="language-markup">.m</code></td>
+<td><code class="language-markup">.l</code></td>
+</tr>
+<tr>
+<td><strong>Container Width</strong></td>
+<td>85%</td>
+<td>85%</td>
+<td>70%</td>
+</tr>
+<tr>
+<td><strong>Number of Columns</strong></td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+ 
+<h5 class="margin-top-50">Adding Responsiveness</h5>
+<p>In the previous examples, we only defined the size for small screens using <code class="language-markup">"col s12"</code>. This is fine if we want a fixed layout since the rules propagate upwards. By just saying s12, we are essentially saying <code class="language-markup">"col s12 m12 l12"</code>. But by explicitly defining the size we can make our website more responsive.</p>
+<div class="row no-gutter">
+<div class="col s12"><div class="grid-example"><span class="flow-text">I am always full-width (col s12)</span></div></div>
+<div class="col s12 m6"><div class="grid-example"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div></div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;div class="row">
+	&lt;div class="grid-example col s12">&lt;span class="flow-text">I am always full-width (col s12)&lt;/span>&lt;/div>
+	&lt;div class="grid-example col s12 m6">&lt;span class="flow-text">I am full-width on mobile (col s12 m6)&lt;/span>&lt;/div>
+&lt;/div>
+		        		</code>
+		        	</pre>
+ 
+<h5 class="margin-top-50">Responsive Side Navigation Layout</h5>
+<p>In this example below, we take the same layout from above, but we make it responsive by defining how many columns the div should take up on each screen size. Try resizing your browser and watch the layout change below.</p>
+<div class="browser-app">
+<div class="top-bar">
+<div class="circles">
+<div id="close-circle" class="circle"></div>
+<div id="minimize-circle" class="circle"></div>
+<div id="maximize-circle" class="circle"></div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="top col s12 main lighten-2"></div>
+<div class="left col s12 m4 l3">
+<p class="flat-header"></p>
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+</div>
+<div class="right col s12 m8 l9 alternative lighten-3">
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+<p class="flat-text"></p>
+</div>
+</div>
+</div>
+</div>
+<pre>
+								<code class="language-markup">
+&lt;!-- Navbar goes here -->
+
+&lt;!-- Page Layout here -->
+&lt;div class="row">
+
+	&lt;div class="col s12 m4 l3"> &lt;!-- Note that "m4 l3" was added -->
+		&lt;!-- Grey navigation panel
+
+		      This content will be:
+		  3-columns-wide on large screens,
+		  4-columns-wide on medium screens,
+		  12-columns-wide on small screens  -->
+
+	&lt;/div>
+
+	&lt;div class="col s12 m8 l9"> &lt;!-- Note that "m8 l9" was added -->
+		&lt;!-- Teal page content
+
+		      This content will be:
+		  9-columns-wide on large screens,
+		  8-columns-wide on medium screens,
+		  12-columns-wide on small screens  -->
+
+	&lt;/div>
+
+&lt;/div>
+		        		</code>
+		        	</pre>
+ 
+<h5 class="margin-top-50">More Responsive Grid Examples</h5>
+<div class="row no-gutter">
+<div class="col s12"><div class="grid-example"><span class="flow-text">s12</span></div></div>
+<div class="col s12 m4 l2"><div class="grid-example"><span class="flow-text">s12 m4 l2</span></div></div>
+<div class="col s12 m4 l8"><div class="grid-example"><span class="flow-text">s12 m4 l8</span></div></div>
+<div class="col s12 m4 l2"><div class="grid-example"><span class="flow-text">s12 m4 l2</span></div></div>
+<div class="col s12 m6 l3"><div class="grid-example"><span class="flow-text">s12 m6 l3</span></div></div>
+<div class="col s12 m6 l3"><div class="grid-example"><span class="flow-text">s12 m6 l3</span></div></div>
+<div class="col s12 m6 l3"><div class="grid-example"><span class="flow-text">s12 m6 l3</span></div></div>
+<div class="col s12 m6 l3"><div class="grid-example"><span class="flow-text">s12 m6 l3</span></div></div>
+</div>
+<pre>
+	          		<code class="language-markup col s12">
+&lt;div class="row">
+	&lt;div class="col s12">&lt;p>s12&lt;/p>&lt;/div>
+	&lt;div class="col s12 m4 l2">&lt;p>s12 m4&lt;/p>&lt;/div>
+	&lt;div class="col s12 m4 l8">&lt;p>s12 m4&lt;/p>&lt;/div>
+	&lt;div class="col s12 m4 l2">&lt;p>s12 m4&lt;/p>&lt;/div>
+&lt;/div>
+&lt;div class="row">
+	&lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+	&lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+	&lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+	&lt;div class="col s12 m6 l3">&lt;p>s12 m6 l3&lt;/p>&lt;/div>
+&lt;/div>
+  	        		</code>
+  	        	</pre>
+</div>
+</div>
+</section>
+</div>
+</main>
+ 
+ 
+ 
+<footer class="page-footer">
+<div class="container">
+<div class="row">
+<div class="col l3 s12">
+<div class="brand-logo">
+<img src="img/logo.png"/>
+<h5 class="valign"><b class="main-text">Aero</b> Admin</h5>
+</div>
+<p>A Material Design based admin template.</p>
+<p>You can use rows and columns here to organize your footer content.</p>
+</div>
+<div class="col l4 offset-l2 s12">
+<h5>Documentation</h5>
+<p>Please, in case of doubt <a href="documentation.html">read the documentation</a>. If the doubt still remains, don't hesitate to <a href="http://themeforest.net/user/lippep" target="_blank">contact me</a>. I'll be glad to help you or even listen to your suggestions. :)</p>
+</div>
+<div class="col l2 offset-l1 s12 footer-links">
+<h5>Links</h5>
+<ul>
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="css_color.html">CSS</a></li>
+<li><a href="components_badges.html">Components</a></li>
+<li><a href="js_collapsible.html">Javascript</a></li>
+<li><a href="profile.html">Profile</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container">
+© 2016 Aero Admin, All rights reserved.
+</div>
+</div>
+</footer>
+ 
+ 
+ 
+<script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="bower_components/Materialize/dist/js/materialize.js" type="text/javascript"></script>
+<script src="bower_components/code-prettify/src/prettify.js" type="text/javascript"></script>
+<script src="js/admin.js" type="text/javascript"></script>
+ 
+ 
+ 
+<script src="js/utils.js" type="text/javascript"></script>
+<script src="js/colors.js" type="text/javascript"></script>
+<script src="js/theme-switcher.js" type="text/javascript"></script>
+</body>
+</html>

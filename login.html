@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Login | Aero Admin</title>
+<meta name="author" content="Felippe Rodrigo Puhle">
+ 
+ 
+ 
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+ 
+ 
+ 
+<link href="bower_components/Materialize/dist/css/materialize.css" rel="stylesheet" type="text/css"/>
+<link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="css/login.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/themes/light.css" id="ssThemeColor" rel="stylesheet" type="text/css"/>
+<link href="css/themes/main/materialize-red.css" id="ssMainColor" rel="stylesheet" type="text/css"/>
+<link href="css/themes/alternative/red.css" id="ssAlternativeColor" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/theme-switcher.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="theme-gradient"></div>
+ 
+ 
+ 
+<main>
+<div class="login-wrapper">
+<form action="index.html" method="post">
+<div class="panel panel-bordered z-depth-1">
+<div class="panel-header">
+<h5>
+Sign In to <b class="main-text">Aero</b>
+</h5>
+</div>
+<div class="panel-body">
+<div class="row no-gutter margin-bottom-0">
+<div class="input-field col s12">
+<input type="text" name="login" id="login" required>
+<label for="login">Username</label>
+</div>
+</div>
+<div class="row no-gutter margin-bottom-0">
+<div class="input-field col s12">
+<input type="password" name="password" id="password" required>
+<label for="password">Password</label>
+</div>
+</div>
+<div class="remember-forgot-wrapper">
+<p class="remember-me">
+<input type="checkbox" name="remember" id="remember">
+<label for="remember">Remember me</label>
+</p>
+<p class="forgot-password">
+<a href="forgot_password.html">
+<i class="material-icons">lock</i>
+Forgot password
+</a>
+</p>
+</div>
+</div>
+<div class="panel-footer panel-footer-social">
+<a class="btn-floating google-plus">
+<i class="fa fa-google-plus"></i>
+</a>
+<a class="btn-floating facebook">
+<i class="fa fa-facebook"></i>
+</a>
+<a class="btn-floating twitter">
+<i class="fa fa-twitter"></i>
+</a>
+<a class="btn-floating linkedin">
+<i class="fa fa-linkedin"></i>
+</a>
+<a class="btn-floating github">
+<i class="fa fa-github"></i>
+</a>
+</div>
+<div class="panel-footer">
+<div class="right-align">
+<a href="register.html" class="btn-flat waves-effect">
+REGISTER
+</a>
+<button type="submit" class="btn-flat waves-effect">
+LOG IN
+</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</main>
+ 
+ 
+ 
+<script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="bower_components/Materialize/dist/js/materialize.js" type="text/javascript"></script>
+ 
+ 
+ 
+<script src="js/utils.js" type="text/javascript"></script>
+<script src="js/colors.js" type="text/javascript"></script>
+<script src="js/theme-switcher.js" type="text/javascript"></script>
+</body>
+</html>

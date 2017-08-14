@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Components - Chips | Aero Admin</title>
+<meta name="author" content="">
+ 
+ 
+ 
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+ 
+ 
+ 
+<link href="bower_components/Materialize/dist/css/materialize.css" rel="stylesheet" type="text/css"/>
+<link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="bower_components/code-prettify/src/prettify.css" rel="stylesheet" type="text/css"/>
+<link href="css/admin.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/themes/light.css" id="ssThemeColor" rel="stylesheet" type="text/css"/>
+<link href="css/themes/main/materialize-red.css" id="ssMainColor" rel="stylesheet" type="text/css"/>
+<link href="css/themes/alternative/red.css" id="ssAlternativeColor" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link href="css/theme-switcher.css" rel="stylesheet" type="text/css"/>
+ 
+ 
+ 
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+ 
+ 
+ 
+<div id="nav-content">
+<nav>
+<div class="row">
+<div class="col s12">
+ 
+ 
+ 
+<div class="nav-wrapper">
+<a href="index.html" class="brand-logo">
+<img src="img/logo.png"/>
+<span class="valign">
+<b class="main-text">Aero</b> Admin
+</span>
+</a>
+ 
+<ul class="right hide-on-med-and-down">
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="documentation.html">Documentation</a></li>
+<li>
+<a class="dropdown-button" href="components_chips.html#!" data-activates="dropdown-css" data-constrainwidth="false" data-beloworigin="true">
+CSS<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li class="active">
+<a class="dropdown-button" href="components_chips.html#!" data-activates="dropdown-components" data-constrainwidth="false" data-beloworigin="true">
+Components<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="components_chips.html#!" data-activates="dropdown-javascript" data-constrainwidth="false" data-beloworigin="true">
+Javascript<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="components_chips.html#!" data-activates="dropdown-apps" data-constrainwidth="false" data-beloworigin="true">
+APPs<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li>
+<a class="dropdown-button" href="components_chips.html#!" data-activates="dropdown-pages" data-constrainwidth="false" data-beloworigin="true">
+Pages<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</a>
+</li>
+<li class="profile ">
+<a class="dropdown-button" href="components_chips.html#!" data-activates="dropdown-profile" data-constrainwidth="false" data-beloworigin="true" data-alignment="right">
+<div class="valign-wrapper">
+<img src="img/profile.jpg" alt="My profile" class="circle responsive-img margin-right-10">
+John Doe
+<i class="material-icons dropdown-icon right">arrow_drop_down</i>
+</div>
+</a>
+</li>
+</ul>
+ 
+<ul id="dropdown-css" class="dropdown-content">
+<li><a href="css_color.html">Color</a></li>
+<li><a href="css_grid.html">Grid</a></li>
+<li><a href="css_helpers.html">Helpers</a></li>
+<li><a href="css_media.html">Media</a></li>
+<li><a href="css_sass.html">Sass</a></li>
+<li><a href="css_shadow.html">Shadow</a></li>
+<li><a href="css_table.html">Table</a></li>
+<li><a href="css_typography.html">Typography</a></li>
+</ul>
+<ul id="dropdown-components" class="dropdown-content">
+<li><a href="components_badges.html">Badges</a></li>
+<li><a href="components_buttons.html">Buttons</a></li>
+<li><a href="components_breadcrumbs.html">Breadcrumbs</a></li>
+<li><a href="components_cards.html">Cards</a></li>
+<li class="active"><a href="components_chips.html">Chips</a></li>
+<li><a href="components_collections.html">Collections</a></li>
+<li><a href="components_footer.html">Footer</a></li>
+<li><a href="components_forms.html">Forms</a></li>
+<li><a href="components_icons.html">Icons</a></li>
+<li><a href="components_navbar.html">Navbar</a></li>
+<li><a href="components_pagination.html">Pagination</a></li>
+<li><a href="components_preloader.html">Preloader</a></li>
+</ul>
+<ul id="dropdown-javascript" class="dropdown-content">
+<li><a href="js_collapsible.html">Collapsible</a></li>
+<li><a href="js_dialogs.html">Dialogs</a></li>
+<li><a href="js_dropdown.html">Dropdown</a></li>
+<li><a href="js_media.html">Media</a></li>
+<li><a href="js_modals.html">Modals</a></li>
+<li><a href="js_parallax.html">Parallax</a></li>
+<li><a href="js_pushpin.html">Pushpin</a></li>
+<li><a href="js_scrollfire.html">ScrollFire</a></li>
+<li><a href="js_scrollspy.html">Scrollspy</a></li>
+<li><a href="js_sidenav.html">SideNav</a></li>
+<li><a href="js_tabs.html">Tabs</a></li>
+<li><a href="js_transitions.html">Transitions</a></li>
+<li><a href="js_waves.html">Waves</a></li>
+</ul>
+<ul id="dropdown-apps" class="dropdown-content">
+<li><a href="apps_crud.html">CRUD</a></li>
+<li><a href="apps_pricing_table.html">Pricing Table</a></li>
+<li><a href="apps_datatables.html">DataTables</a></li>
+<li><a href="apps_maps.html">Maps</a></li>
+<li><a href="apps_charts.html">Charts</a></li>
+</ul>
+<ul id="dropdown-pages" class="dropdown-content">
+<li><a href="pages_blank.html">Blank</a></li>
+<li class="divider"></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="forgot_password.html">Forgot Password</a></li>
+<li class="divider"></li>
+<li><a href="error_400.html">Error 400</a></li>
+<li><a href="error_403.html">Error 403</a></li>
+<li><a href="error_404.html">Error 404</a></li>
+<li><a href="error_500.html">Error 500</a></li>
+</ul>
+<ul id="dropdown-profile" class="dropdown-content">
+<li><a href="profile.html">Profile</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+ 
+<a href="components_chips.html#" data-activates="mobile-demo" class="button-collapse">
+<i class="material-icons">menu</i>
+</a>
+</div>
+ 
+ 
+ 
+<ul class="side-nav" id="mobile-demo">
+<li class="logo">
+<img src="img/logo.png"/>
+<p>
+<b class="main-text">Aero</b> Admin
+</p>
+</li>
+<li>
+<a href="index.html" class="waves-effect">Dashboard</a>
+</li>
+<li class="padding-0">
+<ul class="collapsible collapsible-accordion">
+<li class="bold">
+<a class="collapsible-header waves-effect">CSS</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="css_color.html">Color</a></li>
+<li><a href="css_grid.html">Grid</a></li>
+<li><a href="css_helpers.html">Helpers</a></li>
+<li><a href="css_media.html">Media</a></li>
+<li><a href="css_sass.html">Sass</a></li>
+<li><a href="css_shadow.html">Shadow</a></li>
+<li><a href="css_table.html">Table</a></li>
+<li><a href="css_typography.html">Typography</a></li>
+</ul>
+</div>
+</li>
+<li class="bold">
+<a class="collapsible-header waves-effect">Components</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="components_badges.html">Badges</a></li>
+<li><a href="components_buttons.html">Buttons</a></li>
+<li><a href="components_breadcrumbs.html">Breadcrumbs</a></li>
+<li><a href="components_cards.html">Cards</a></li>
+<li><a href="components_chips.html">Chips</a></li>
+<li><a href="components_collections.html">Collections</a></li>
+<li><a href="components_footer.html">Footer</a></li>
+<li><a href="components_forms.html">Forms</a></li>
+<li><a href="components_icons.html">Icons</a></li>
+<li><a href="components_navbar.html">Navbar</a></li>
+<li><a href="components_pagination.html">Pagination</a></li>
+<li><a href="components_preloader.html">Preloader</a></li>
+</ul>
+</div>
+</li>
+<li class="bold">
+<a class="collapsible-header waves-effect">JavaScript</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="js_collapsible.html">Collapsible</a></li>
+<li><a href="js_dialogs.html">Dialogs</a></li>
+<li><a href="js_dropdown.html">Dropdown</a></li>
+<li><a href="js_media.html">Media</a></li>
+<li><a href="js_modals.html">Modals</a></li>
+<li><a href="js_parallax.html">Parallax</a></li>
+<li><a href="js_pushpin.html">Pushpin</a></li>
+<li><a href="js_scrollfire.html">ScrollFire</a></li>
+<li><a href="js_scrollspy.html">Scrollspy</a></li>
+<li><a href="js_sidenav.html">SideNav</a></li>
+<li><a href="js_tabs.html">Tabs</a></li>
+<li><a href="js_transitions.html">Transitions</a></li>
+<li><a href="js_waves.html">Waves</a></li>
+</ul>
+</div>
+</li>
+<li class="bold">
+<a class="collapsible-header waves-effect">APPs</a>
+<div class="collapsible-body">
+<ul>
+<li><a href="apps_crud.html">CRUD</a></li>
+<li><a href="apps_pricing_table.html">Pricing Table</a></li>
+<li><a href="http://demo.felippepuhle.com.br/aero/app_datatables.html">Datatables</a></li>
+<li><a href="http://demo.felippepuhle.com.br/aero/app_maps.html">Maps</a></li>
+<li><a href="http://demo.felippepuhle.com.br/aero/app_charts.html">Charts</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+ 
+ 
+ 
+<main>
+<div class="main-content">
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<div class="page-header">
+<h1>
+<i class="material-icons">face</i> Chips
+</h1>
+<p>Chips can be used to represent small blocks of information. They are most commonly used either for contacts or for tags.</p>
+</div>
+</div>
+</div>
+ 
+ 
+ 
+<section id="components_chips">
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Introduction</h4>
+<div class="chip">
+<img src="img/yuna.jpg" alt="Contact Person">
+Jane Doe
+</div>
+<div class="chip">
+Tag
+<i class="close material-icons">close</i>
+</div>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Contacts</h4>
+<p>To create a contact chip just add an img inside.</p>
+<pre>
+				            	<code class="language-markup">
+&lt;div class="chip">
+	&lt;img src="img/yuna.jpg" alt="Contact Person">
+	Jane Doe
+&lt;/div>
+				            	</code>
+				            </pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Tags</h4>
+<p>To create a tag chip just add an close icon inside with the class <code class="language-markup">close</code></p>
+<pre>
+				            	<code class="language-markup">
+&lt;div class="chip">
+	Tag
+	&lt;i class="close material-icons">close&lt;/i>
+&lt;/div>
+				            	</code>
+				            </pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Javascript Plugin Usage</h4>
+<p class="caption">To add tags, just enter your tag text and press enter. You can delete them by clicking on the close icon or by using your delete button.</p>
+<div class="chips"></div>
+<p class="caption">Set initial tags.</p>
+<div class="chips chips-initial"></div>
+<p class="caption">Use placeholders and override hint texts.</p>
+<div class="chips chips-placeholder"></div>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Markup</h4>
+<pre>
+				            	<code class="language-markup">
+&lt;div class="chips">&lt;/div>
+&lt;div class="chips chips-initial">&lt;/div>
+&lt;div class="chips chips-placeholder">&lt;/div>
+				            	</code>
+				            </pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">jQuery Initialization</h4>
+<pre>
+				            	<code class="language-javascript">
+$('.chips').material_chip();
+$('.chips-initial').material_chip({
+	data: [{
+		tag: 'Apple',
+	}, {
+		tag: 'Microsoft',
+	}, {
+		tag: 'Google',
+	}],
+});
+$('.chips-placeholder').material_chip({
+	placeholder: 'Enter a tag',
+	secondaryPlaceholder: '+Tag',
+});
+				            	</code>
+				            </pre>
+<p>Chip data object</p>
+<pre>
+				            	<code class="language-javascript">
+var chip = {
+	tag: 'chip content',
+	image: '', //optional
+	id: 1, //optional
+};
+				            	</code>
+				            </pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">jQuery Plugin Options</h4>
+<table class="highlight">
+<thead>
+<tr>
+<th>Option Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>array</td>
+<td>Set the chip data (look at the Chip data object)</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>string</td>
+<td>Set first placeholder when there are no tags.</td>
+</tr>
+<tr>
+<td>secondaryPlaceholder</td>
+<td>string</td>
+<td>Set second placeholder when adding additional tags.</td>
+</tr>
+<tr>
+</tbody>
+</table>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Events</h4>
+<p>Material chips exposes a few events for hooking into chips functionality.</p>
+<table class="highlight">
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chips.add</td>
+<td>this method is triggered when a chip is <strong>added</strong>.</td>
+</tr>
+<tr>
+<td>chips.delete</td>
+<td>this method is triggered when a chip is <strong>deleted</strong>.</td>
+</tr>
+<tr>
+<td>chips.select</td>
+<td>this method is triggered when a chip is <strong>selected</strong>.</td>
+</tr>
+</tbody>
+</table>
+<pre>
+				            	<code class="language-javascript">
+$('.chips').on('chip.add', function(e, chip){
+	// you have the added chip here
+});
+
+$('.chips').on('chip.delete', function(e, chip){
+	// you have the deleted chip here
+});
+
+$('.chips').on('chip.select', function(e, chip){
+	// you have the selected chip here
+});
+				            	</code>
+				            </pre>
+</div>
+</div>
+ 
+ 
+ 
+<div class="row">
+<div class="col s12">
+<h4 class="main-text lighten-1">Methods</h4>
+<p>Use these methods to access the chip data.</p>
+<table class="table highlight">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>It returns the stored data.</td>
+</tr>
+</tbody>
+</table>
+<pre>
+				            	<code class="language-javascript">
+$('.chips-initial').material_chip('data');
+				            	</code>
+				            </pre>
+</div>
+</div>
+</section>
+</div>
+</main>
+ 
+ 
+ 
+<footer class="page-footer">
+<div class="container">
+<div class="row">
+<div class="col l3 s12">
+<div class="brand-logo">
+<img src="img/logo.png"/>
+<h5 class="valign"><b class="main-text">Aero</b> Admin</h5>
+</div>
+<p>A Material Design based admin template.</p>
+<p>You can use rows and columns here to organize your footer content.</p>
+</div>
+<div class="col l4 offset-l2 s12">
+<h5>Documentation</h5>
+<p>Please, in case of doubt <a href="documentation.html">read the documentation</a>. If the doubt still remains, don't hesitate to <a href="http://themeforest.net/user/lippep" target="_blank">contact me</a>. I'll be glad to help you or even listen to your suggestions. :)</p>
+</div>
+<div class="col l2 offset-l1 s12 footer-links">
+<h5>Links</h5>
+<ul>
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="css_color.html">CSS</a></li>
+<li><a href="components_badges.html">Components</a></li>
+<li><a href="js_collapsible.html">Javascript</a></li>
+<li><a href="profile.html">Profile</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container">
+© 2016 Aero Admin, All rights reserved.
+</div>
+</div>
+</footer>
+ 
+ 
+ 
+<script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="bower_components/Materialize/dist/js/materialize.js" type="text/javascript"></script>
+<script src="bower_components/code-prettify/src/prettify.js" type="text/javascript"></script>
+<script src="js/admin.js" type="text/javascript"></script>
+ 
+ 
+ 
+<script src="js/utils.js" type="text/javascript"></script>
+<script src="js/colors.js" type="text/javascript"></script>
+<script src="js/theme-switcher.js" type="text/javascript"></script>
+ 
+ 
+ 
+<script src="js/pages/components_chips.js" type="text/javascript"></script>
+</body>
+</html>

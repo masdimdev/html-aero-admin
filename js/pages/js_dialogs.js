@@ -1,0 +1,1 @@
+!function(t){t.CustomToast=function(){return{displayCustomHTMLToast:function(){var a=t("<span>I am toast content</span>");Materialize.toast(a,5e3)}}}}(jQuery);
